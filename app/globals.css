@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply h-full scroll-smooth bg-black text-white;
+}
+
+.gradientText {
+	@apply bg-gradient-to-r from-[#3D8BFF] to-[#AB23FF] bg-clip-text font-semibold text-transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-semibold text-white;
+}
+
+p,
+span,
+a,
+li {
+	@apply font-medium text-greyText;
+}
+
+.no-scrollbar {
+	::-webkit-scrollbar {
+		display: none;
+		height: 0;
+		width: 0;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 0rem;
+	height: 0rem;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply cursor-pointer bg-greyLine;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+::-webkit-scrollbar-corner {
+	@apply bg-transparent;
+}
